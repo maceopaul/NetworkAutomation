@@ -3,7 +3,7 @@
 import argparse
 from ast import arg
 import random
-from scapy.all import send, IP, TCP_SERVICES
+from scapy.all import send, IP, TCP
 
 DEFAULT_PACK = 99999999
 MAX_PORTS= 65535
@@ -33,7 +33,7 @@ def SYN_flood(Target_IP, dPort, packets_to_send):
     print("Snet all the packets")
     
 def main():
-    Target_IP. dPort, packets_to_send= get_args()
+    Target_IP, dPort, packets_to_send= get_args()
     SYN_flood(Target_IP, dPort, packets_to_send)
     
 if __name__ == "__main__":
