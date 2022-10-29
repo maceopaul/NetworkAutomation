@@ -1,0 +1,5 @@
+ifconfig down
+
+ifconfig ens33 hw ether mac address
+
+ifconfig up
